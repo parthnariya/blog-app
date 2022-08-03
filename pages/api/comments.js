@@ -16,10 +16,10 @@ export default async function comments(request, response) {
   `
   try{
     const result = await client.request(query,request.body)
-    console.log(result)
+    // console.log(result)
     return response.status(200).send(result);
   }catch (error){
-    console.log(error)
+    // console.log(error)
     return response.status(200).send(error);
   } 
 }
